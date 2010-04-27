@@ -1,0 +1,11 @@
+<% form_for @image, :html => { :multipart => true } do |form| %>  
+  <ol class="formList">  
+    <!-- Other fields go here... -->  
+    <li>  
+      <%= form.label :photo, "Photo" %>  
+      <%= form.file_field :photo %>  
+    <li>  
+      <%= form.submit "Submit" %>  
+    </li>  
+  </ol>  
+<% end %>
